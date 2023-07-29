@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from datetime import datetime
+
 from django.http import HttpResponse
 
-
-def members(request):
-    now = NSN
+def index(request):
+    now = datetime.now()
     html = f'''
     <html>
         <body>
@@ -13,5 +13,4 @@ def members(request):
     </html>
     '''
     return HttpResponse(html)
-
 # Create your views here.
