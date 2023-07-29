@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "nsnstudio/wsgi.py",
+      "src": "studio/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "nsnstudio/wsgi.py"
+      "dest": "studio/wsgi.py"
     }
   ]
 }
